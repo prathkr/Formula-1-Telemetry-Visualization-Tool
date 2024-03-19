@@ -114,10 +114,32 @@ if laps is not None and not laps.empty:
     plt.xlabel('Distance')
     plt.ylabel('Speed')
     plt.grid(True)
-    plt.savefig('circuit_track_plot.png', dpi=300)
-    plt.savefig('driver_speed_graph.png', dpi=300)
+    plt.savefig('circuit_plot.png', dpi=300)
+    plt.show()
+    
+    plt.figure(figsize=(12, 8))
+    for driver in drivers:
+        driver_data = telemetry[telemetry['Driver'] == driver]
+        plt.plot(driver_data['Distance'], driver_data['Throttle'], label=driver, color=driver_colors[driver])
+
+    plt.xlabel('Distance')
+    plt.ylabel('Throttle')
+    plt.grid(True)
+    plt.legend(loc='upper left')
+    plt.savefig('driver_throttle_graph.png', dpi=300)
     plt.show()
 
+    plt.figure(figsize=(12, 8))
+    for driver in drivers:
+        driver_data = telemetry[telemetry['Driver'] == driver]
+        plt.plot(driver_data['Distance'], driver_data['Brake'], label=driver, color=driver_colors[driver])
+
+    plt.xlabel('Distance')
+    plt.ylabel('Brake')
+    plt.grid(True)
+    plt.legend(loc='upper left')
+    plt.savefig('driver_brake_graph.png', dpi=300)
+    plt.show()
 
 else:
     print("Failed to load session data.")
