@@ -114,7 +114,8 @@ if laps is not None and not laps.empty:
     plt.xlabel('Distance')
     plt.ylabel('Speed')
     plt.grid(True)
-    plt.savefig('circuit_plot.png', dpi=300)
+    plt.savefig('circuit_track_plot.png', dpi=300)
+    plt.savefig('driver_speed_graph.png', dpi=300)
     plt.show()
 
 
