@@ -15,10 +15,10 @@ pip install -r requirements.txt
 ```
 
 ### 3. Caching configuration
-To enable caching and speed up data loading, Replace 'path' with your cache directory in the script
+To enable caching and speed up data loading, update 'path' with your cache directory in the script
 
-```
-ff1.Cache.enable_cache('path') 
+```python
+ff1.Cache.enable_cache('path')
 ```
 
 # Usage
@@ -29,6 +29,5 @@ Run the script in a python environment.
 python f1_viz.py
 ```
 ### 2. Input race data
-follow the on-screen instructions to input race details
-example : 
+Follow the on-screen instructions to input race details
 
