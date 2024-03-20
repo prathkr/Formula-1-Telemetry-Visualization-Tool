@@ -31,6 +31,6 @@ python f1_viz.py
 ### 2. Input race data
 Follow the on-screen prompts to enter the required race data
 
-<img src="https://github.com/prathkr/Formula1-Telemetry-Visualization-Tool/assets/130935483/c5668d40-a060-4d2b-9c7e-469caab0282f" alt="image" width="406" height="203" style="float:left;">
+<img src="https://github.com/prathkr/Formula1-Telemetry-Visualization-Tool/assets/130935483/c5668d40-a060-4d2b-9c7e-469caab0282f" alt="image" width="506" height="203" style="float:left;">
 
 
