@@ -10,12 +10,12 @@ import pandas as pd
 import random  
 
 plotting.setup_mpl()
-ff1.Cache.enable_cache('path')
+ff1.Cache.enable_cache('cache')
 
-print('Enter race data ')
+print('ENTER RACE DATA')
 year = input('Enter year: ')
 circuit = input('Enter circuit: ')
-session = input('Enter session: \nSessions: FP1, FP2, FP3, Q, SQ(Sprint Qualifying), R(Race)')
+session = input('Sessions: FP1, FP2, FP3, Q, SQ(Sprint Qualifying), R(Race)\nEnter session: ')
 num_drivers = int(input('Enter the number of drivers to analyze: '))
 
 drivers = []
@@ -88,17 +88,13 @@ if laps is not None and not laps.empty:
     plt.axis('equal')
     plt.tick_params(labelleft=False, left=False, labelbottom=False, bottom=False)
 
-    legend_elements = [plt.Line2D([0], [0], marker='o', color='w', label=driver, 
-                               markerfacecolor=driver_colors[driver], markersize=10) 
-                   for driver in drivers]
-    plt.legend(handles=legend_elements, loc='lower center')
-
+    
+    plt.title('{} - {} - {}'.format(circuit,year,session))
     legend_elements = [Line2D([0], [0], color=color, label=driver) for driver, color in driver_colors.items()]
     plt.gca().add_collection(lc_comp)
     plt.axis('equal')
     plt.tick_params(labelleft=False, left=False, labelbottom=False, bottom=False)
-    plt.legend(handles=legend_elements, loc='upper left')  # You can change the location as needed
-
+    plt.legend(handles=legend_elements, loc='upper left')  
     drivers = telemetry['Driver'].unique()
     
     plt.figure(figsize=(12, 8))
@@ -110,18 +106,18 @@ if laps is not None and not laps.empty:
                                markerfacecolor=driver_colors[driver], markersize=10) 
                    for driver in drivers]
     plt.legend(handles=legend_elements, loc='upper left')
-    
+    plt.title('{} - {} - {}'.format(circuit,year,session))
     plt.xlabel('Distance')
     plt.ylabel('Speed')
     plt.grid(True)
-    plt.savefig('circuit_plot.png', dpi=300)
+    plt.savefig('driver_speed_graph.png', dpi=300)
     plt.show()
     
     plt.figure(figsize=(12, 8))
     for driver in drivers:
         driver_data = telemetry[telemetry['Driver'] == driver]
         plt.plot(driver_data['Distance'], driver_data['Throttle'], label=driver, color=driver_colors[driver])
-
+    plt.title('{} - {} - {}'.format(circuit,year,session))
     plt.xlabel('Distance')
     plt.ylabel('Throttle')
     plt.grid(True)
@@ -133,7 +129,7 @@ if laps is not None and not laps.empty:
     for driver in drivers:
         driver_data = telemetry[telemetry['Driver'] == driver]
         plt.plot(driver_data['Distance'], driver_data['Brake'], label=driver, color=driver_colors[driver])
-
+    plt.title('{} - {} - {}'.format(circuit,year,session))
     plt.xlabel('Distance')
     plt.ylabel('Brake')
     plt.grid(True)
