@@ -10,7 +10,7 @@ First, clone the repository or download the repository
 ### 2. Install dependencies
 Navigate to the project directory and install the required dependencies using pip. Ensure that you have Python installed on your system
 
-```cmd
+```
 pip install -r requirements.txt
 ```
 
@@ -25,9 +25,10 @@ ff1.Cache.enable_cache('path')
 ### 1. Run the project
 Run the script in a python environment.
 
-```cmd
+```
 python f1_viz.py
 ```
 ### 2. Input race data
 Follow the on-screen instructions to input race details
+![enterracedata](https://github.com/prathkr/Formula1-Telemetry-Visualization-Tool/assets/130935483/2813ad0f-f7e7-40ad-a702-99b0c0e1fd82)
 
