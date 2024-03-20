@@ -29,7 +29,7 @@ Run the script in a python environment.
 python f1_viz.py
 ```
 ### 2. Input race data
-Follow the on-screen instructions to input race details
-![image](https://github.com/prathkr/Formula1-Telemetry-Visualization-Tool/assets/130935483/c5668d40-a060-4d2b-9c7e-469caab0282f)
+Follow the on-screen prompts to enter the required race data
+![image](https://github.com/prathkr/Formula1-Telemetry-Visualization-Tool/assets/130935483/c5668d40-a060-4d2b-9c7e-469caab0282f){:height="200px" width="300px"}
 
 
