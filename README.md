@@ -46,6 +46,9 @@ Follow the on-screen prompts to enter the required race data
 * Each plot is customized with appropriate labels, legends, and gridlines for clarity and interpretation.
 * The generated plots are saved as PNG images, facilitating further analysis, documentation, or presentation of the data.
 
+# Contributions and Issues
+Contributions and feedback are welcome! If you encounter any issues or have suggestions for improvements, please open an issue on GitHub.
+
 
 
 
