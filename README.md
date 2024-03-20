@@ -1,5 +1,5 @@
 # F1 Telemetry Visualization Tool
-This python script is designed to analyze, visualize and compare telemetry data from Formula 1 races using the fastf1 library. 
+This python script is designed to visualize and compare telemetry data from Formula 1 races using the fastf1 library. 
 
 # Overview
 The script prompts the user to input race details such as year, circuit, session type, and the number of drivers to analyze. It then fetches telemetry data for the specified race session and drivers, allowing for detailed analysis. The analysis includes generating a plot that provides a visual representation of how each driver performs in terms of speed during their fastest lap, as well as plotting speed, throttle, and brake data for each driver along the race distance.
