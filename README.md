@@ -30,5 +30,6 @@ python f1_viz.py
 ```
 ### 2. Input race data
 Follow the on-screen instructions to input race details
-![enterracedata](https://github.com/prathkr/Formula1-Telemetry-Visualization-Tool/assets/130935483/2813ad0f-f7e7-40ad-a702-99b0c0e1fd82 =250x250)
+![image](https://github.com/prathkr/Formula1-Telemetry-Visualization-Tool/assets/130935483/c5668d40-a060-4d2b-9c7e-469caab0282f)
+
 
