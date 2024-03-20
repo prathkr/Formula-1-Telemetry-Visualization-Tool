@@ -39,7 +39,7 @@ python f1_viz.py
 ### 2. Input race data
 Follow the on-screen prompts to enter the required race data
 
-<img src="https://github.com/prathkr/Formula1-Telemetry-Visualization-Tool/assets/130935483/c5668d40-a060-4d2b-9c7e-469caab0282f" alt="image" width="666" height="166" style="float:left;">
+<img src="https://github.com/prathkr/Formula1-Telemetry-Visualization-Tool/assets/130935483/c5668d40-a060-4d2b-9c7e-469caab0282f" alt="image" width="666" height="200" style="float:left;">
 
 ### 3. Plot generation and sharing
 * The script generates multiple plots to visualize different aspects of driver performance, including speed, throttle, and brake inputs.
