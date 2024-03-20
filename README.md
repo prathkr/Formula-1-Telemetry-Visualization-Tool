@@ -10,7 +10,7 @@ First, clone the repository or download the repository
 ### 2. Install dependencies
 Navigate to the project directory and install the required dependencies using pip. Ensure that you have Python installed on your system
 
-```bash
+```cmd
 pip install -r requirements.txt
 ```
 
@@ -25,7 +25,7 @@ ff1.Cache.enable_cache('path')
 ### 1. Run the project
 Run the script in a python environment.
 
-```bash
+```cmd
 python f1_viz.py
 ```
 ### 2. Input race data
