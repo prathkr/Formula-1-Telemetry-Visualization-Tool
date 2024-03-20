@@ -33,4 +33,11 @@ Follow the on-screen prompts to enter the required race data
 
 <img src="https://github.com/prathkr/Formula1-Telemetry-Visualization-Tool/assets/130935483/c5668d40-a060-4d2b-9c7e-469caab0282f" alt="image" width="666" height="203" style="float:left;">
 
+### 3. Plot Generation and Sharing
+* The script generates multiple plots to visualize different aspects of driver performance, including speed, throttle, and brake inputs.
+* Each plot is customized with appropriate labels, legends, and gridlines for clarity and interpretation.
+* The generated plots are saved as PNG images, facilitating further analysis, documentation, or presentation of the data.
+
+
+
 
