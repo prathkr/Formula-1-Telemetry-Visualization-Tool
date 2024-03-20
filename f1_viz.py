@@ -10,7 +10,7 @@ import pandas as pd
 import random  
 
 plotting.setup_mpl()
-ff1.Cache.enable_cache('cache')
+ff1.Cache.enable_cache('path')
 
 print('Enter race data ')
 year = input('Enter year: ')
